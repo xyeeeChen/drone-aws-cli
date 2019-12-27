@@ -1,4 +1,6 @@
 # Drone-AWS-CLI
+[![GitHub tag](https://img.shields.io/github/tag/xyeeeChen/drone-aws-cli.svg)](https://github.com/xyeeeChen/drone-aws-cli/releases)
+[![Docker Pulls](https://img.shields.io/docker/pulls/yeechen/drone-aws-cli.svg)](https://hub.docker.com/r/yeechen/drone-aws-cli/)
 
 [Drone](https://drone.io/) plugin for AWS CLI.
 
@@ -24,11 +26,11 @@ steps:
   - name: download
     image: yeechen/drone-aws-cli
     settings:
-      access_key=<access_key>
-      secret_key=<secret_key>
-      region=<region>
-      cmd=s3
-      sub_cmd="cp s3://bucket/folder . --recursive"
+      access_key: <access_key>
+      secret_key: <secret_key>
+      region: <region>
+      cmd: s3
+      sub_cmd: "cp s3://bucket/folder . --recursive"
 ```
 
 ## References
